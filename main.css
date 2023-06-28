@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+body{
+    background: #1E1E1E;
+}
+a{
+    text-decoration: none;
+}
+
+.hero,
+.services,
+.projects,
+.last{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.last{  
+    gap: 40px;  
+    justify-content: flex-end;    
+}
+
+nav,
+footer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #28331F;
+}
+
+.navcontent{
+    width: 960px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    flex: 1;
+}
+
+.left img{
+    width: 232px;
+}
+
+.left img:hover{
+    cursor: pointer;
+}
+
+.right{
+    flex: 3;
+    display: flex;
+    gap: 45px;
+    justify-content: flex-end;
+}
+
+.right a{
+    color: #F5FAFF;
+    font-style: italic;
+    font-size: 20px;
+    transition: .2s ease;
+}
+
+.right a:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: .2s ease;
+    opacity: 80%;
+}
+
+.header{
+    width: 100%;
+    height: 370px;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-image: url(media/header.jpg);
+    background-position: center;
+}
+
+.header h1,
+.intro h1,
+.intro h2,
+.intro h3,
+.services h1,
+.hl1{
+    color: #F5FAFF;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.header h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 10px #28331F;
+    cursor: default;
+}
+
+.header span{    
+    color: #F5FAFF;
+    font-family: 'Anek Latin', sans-serif;
+   
+}
+
+#consultation:hover,
+#design:hover,
+#marketing:hover{
+    cursor: pointer;  
+    color: #FF8800;  
+}
+
+form{  
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#email{
+    width: 230px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: #F5FAFF;
+    font-style: italic;
+    background: #FF8800;
+    box-shadow: 1px 1px 10px #28331F;
+}
+
+#email:focus{
+    outline: none;
+}
+
+#email::placeholder{
+    color: #28331F;
+    text-align: center;
+}
+
+.submit{
+    background: #28331F;
+    border: none;
+    color: #F5FAFF;
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s ease;
+}
+
+.submit:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s ease;
+}
+
+.intro{
+    width: 960px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1{
+    font-size: 80px;
+}
+.intro h2{
+    font-size: 30px;
+}
+.intro h3{
+    font-size: 20px;
+}
+
+.hl1{
+    color: #FF8800;
+}
+
+.roi,
+.design{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.roi{
+    background-image: url(media/roi.jpg);
+}
+
+.design{
+    background-image: url(media/design.jpg);
+}
+
+.marketing{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/marketing.jpg);   
+}
+
+.roi div,
+.design div,
+.marketing div{
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: .2s ease;
+}
+
+.roi div,
+.design div{    
+    height: 177px;
+}
+
+.marketing div{
+    height: 250px;
+}
+
+.roi h1,
+.design h1,
+.marketing h1{
+    font-size: 30px;
+    color: #FF8800;
+}
+
+.roi p,
+.design p{
+    font-size: 25px;    
+}
+
+.marketing p{
+    font-size: 20px;
+}
+
+.marketing p2{
+    font-size: 15px;
+}
+
+.roi p,
+.design p,
+.marketing p,
+.marketing p2{
+    color: #F5FAFF;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.roi div:hover,
+.design div:hover,
+.marketing div:hover{
+    transform: scale(1.03);
+    transition: .2s ease;
+}
+
+.projects h1{
+    color: #F5FAFF;
+    font-size: 40px;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.proj{
+    margin-top: 50px;
+    width: 960px;
+    height: 150px;
+    color: #F5FAFF;
+    font-size: 35px;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.grid{
+    width: 960px;
+    height: 300px;
+    gap: 20px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs{
+    width: 280px;
+    height: 280px; 
+    transition: .2s ease;   
+}
+
+.imgs:hover{
+    transform: scale(1.1);
+    transition: .2s ease;
+    opacity: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#img1{
+    background-image: url(https://source.unsplash.com/random/280x280/?house);
+}
+#img2{
+    background-image: url(https://source.unsplash.com/random/280x280/?plot);
+}
+#img3{
+    background-image: url(https://source.unsplash.com/random/280x280/?apartament);
+}
+
+.tests{
+    width: 960px;
+    height: 300px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.test-cont{
+    width: 450px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5FAFF;
+    border-radius: 20px;
+}
+
+.icon,
+.icon img{
+    height: 60px;
+    width: 60px;  
+}
+
+.icon{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descrip{
+    flex: 3;    
+}
+
+.descrip p{
+    font-size: 18px;
+    font-family: 'Anek Latin', sans-serif;
+    color: #28331F;
+}
+
+
+.learn-more{    
+    width: 960px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn-more h1{  
+    text-align: center;      
+    color: #F5FAFF;
+    font-size: 40px;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.learn-more span{
+    font-family: 'Anek Latin', sans-serif;
+    color: #FF8800;
+}
+
+.learn-more button{
+    border: none;
+    color: #28331F;
+    border-radius: 20px;
+    padding: 10px;
+    background: #FF8800;
+    transition: .2s ease;
+}
+
+.learn-more button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s ease;
+}
+
+.socials{
+    width: 50px;
+    height: 50px;
+}
+
+.socials:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:960px){
+    .navcontent{
+        width: 100%;
+    }
+
+    .left{
+        flex: 0;
+    }
+
+    .left img{
+        width: 150px;
+    }
+
+    .right{
+        display: none;       
+    }
+
+    .header{
+        background-image: url(media/header1.jpg);
+        background-position: 5vw;
+        gap: 10px;
+    }
+
+    .header h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    #email{
+        width: 150px;
+        height: 20px;
+        font-size: 15px;
+    }
+
+    .intro{
+        width: 100%;
+    }
+
+    .intro h1{
+        font-size: 25px;
+    }
+    
+    .intro h2,
+    .intro h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .roi div,
+    .design div,
+    .marketing div{
+        width: 100%;
+        align-items: center;
+    }
+
+    .marketing div{
+        height: 177px;
+    }
+
+    .marketing p2{
+        display: none;
+    }
+
+    .roi h1,
+    .design h1,
+    .marketing h1{
+        font-size: 20px;
+    }
+
+    .roi p,
+    .design p,
+    .marketing p{
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .proj{
+        padding: 5px;
+        text-align: center;       
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .grid{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .projects{
+        height: 1200px;
+    }
+
+    .tests{
+        width: 100%;
+    }
+
+    .test-cont{
+        padding: 5px;
+        width: 310px;
+    }
+
+    .descrip p{
+        font-size: 15px;
+    }
+
+    .learn-more{
+        width: 100%;
+    }
+
+    .learn-more h1{
+        font-size: 20px;
+    }
+
+    footer .right{
+        gap: 10px;
+        display: flex;
+        flex: 0;
+    }
+
+    footer .left img{
+        width: 100px;
+    }
+
+    .socials{
+        width: 30px;
+        height: 30px;
+    }
+    
+
+}
